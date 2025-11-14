@@ -2,15 +2,13 @@ package com.yin.service.user.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.yin.base.service.BaseServiceImpl;
 import com.yin.common.Result;
 import com.yin.common.error.ExceptionEnum;
 import com.yin.common.sys.SysEnum;
 import com.yin.entity.user.UserTablePojo;
 import com.yin.mapper.user.UserTableMapper;
 import com.yin.service.user.IUserTableService;
-import com.yin.utils.ServiceUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,12 +17,7 @@ import java.util.List;
  * 用户表  服务实现类
  */
 @Service
-public class UserTableServiceImpl extends ServiceImpl<UserTableMapper, UserTablePojo> implements IUserTableService {
-    @Autowired
-    private UserTableMapper userTableMapper;
-    @Autowired
-    private ServiceUtils<UserTablePojo> serviceUtils;
-
+public class UserTableServiceImpl extends BaseServiceImpl<UserTableMapper, UserTablePojo> implements IUserTableService {
     /**
      * 常用查询条件
      *
@@ -95,28 +88,32 @@ public class UserTableServiceImpl extends ServiceImpl<UserTableMapper, UserTable
     }
 
     //新增
+    @Override
     public Result<?> addUserTable(UserTablePojo userTablePojo) {
-        return serviceUtils.insert(userTableMapper, userTablePojo, userTableVerifyS(userTablePojo, SysEnum.SAVE), userTableLambdaQueryWrapper(userTablePojo));
+        return insert(userTablePojo, userTableVerifyS(userTablePojo, SysEnum.SAVE), userTableLambdaQueryWrapper(userTablePojo));
     }
 
-
     //删除
+    @Override
     public Result<?> deleteUserTable(UserTablePojo userTablePojo) {
-        return serviceUtils.delete(userTableMapper, userTablePojo, userTableVerifyS(userTablePojo, SysEnum.DELETE));
+        return delete(userTablePojo, userTableVerifyS(userTablePojo, SysEnum.DELETE));
     }
 
     //修改
+    @Override
     public Result<?> updateUserTable(UserTablePojo userTablePojo) {
-        return serviceUtils.update(userTableMapper, userTablePojo, userTableVerifyS(userTablePojo, SysEnum.UPDATE));
+        return update(userTablePojo, userTableVerifyS(userTablePojo, SysEnum.UPDATE));
     }
 
     //查询
+    @Override
     public Result<List<UserTablePojo>> getUserTableList(UserTablePojo userTablePojo) {
-        return serviceUtils.selectList(userTableMapper, userTableLambdaQueryWrapper(userTablePojo));
+        return selectFORList(userTableLambdaQueryWrapper(userTablePojo));
     }
 
     //分页查询
+    @Override
     public Result<Page<UserTablePojo>> getUserTableListPage(UserTablePojo userTablePojo) {
-        return serviceUtils.selectPage(userTableMapper, UserTablePojo.class, userTablePojo, userTableLambdaQueryWrapper(userTablePojo));
+        return selectPage(userTablePojo, userTableLambdaQueryWrapper(userTablePojo));
     }
 }

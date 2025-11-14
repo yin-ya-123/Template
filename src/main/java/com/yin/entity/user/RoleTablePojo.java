@@ -11,11 +11,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- *  用户表 
+ *  角色表 
  */
 @Data
-@TableName("USER_TABLE")
-public class UserTablePojo extends Entity implements Serializable {
+@TableName("ROLE_TABLE")
+public class RoleTablePojo extends Entity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
@@ -26,18 +26,18 @@ public class UserTablePojo extends Entity implements Serializable {
     private String id;
 
     /**
-     *  用户名 
+     *  角色名称 
      */
-    @TableField("USER_NAME")
+    @TableField("ROLE_NAME")
     @JsonProperty
-    private String userName;
+    private String roleName;
 
     /**
-     *  用户密码 
+     *  角色描述 
      */
-    @TableField("PASSWORD")
+    @TableField("ROLE_DESC")
     @JsonProperty
-    private String password;
+    private String roleDesc;
 
     /**
      *  拼音码 / 助记码 

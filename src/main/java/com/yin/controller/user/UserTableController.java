@@ -1,9 +1,8 @@
-package com.yin.controller;
+package com.yin.controller.user;
 
 import com.yin.common.Result;
 import com.yin.entity.user.UserTablePojo;
 import com.yin.service.user.IUserTableService;
-import com.yin.utils.GenericMatchUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -57,7 +56,6 @@ public class UserTableController {
     //查询
     @PostMapping("getUserTableList")
     public Result<?> getUserTablePojoList(@RequestBody UserTablePojo userTablePojo) {
-        GenericMatchUtils.isMatch(userTablePojo, UserTablePojo.class);
         return userTableService.getUserTableList(userTablePojo);
     }
 

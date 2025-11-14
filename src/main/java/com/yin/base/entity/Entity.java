@@ -1,4 +1,4 @@
-package com.yin.entity.parent;
+package com.yin.base.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.AllArgsConstructor;

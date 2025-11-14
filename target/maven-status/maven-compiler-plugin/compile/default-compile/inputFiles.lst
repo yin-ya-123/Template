@@ -1,3 +1,6 @@
+D:\cs\模板2\Template\src\main\java\com\yin\base\entity\Entity.java
+D:\cs\模板2\Template\src\main\java\com\yin\base\service\BaseServiceImpl.java
+D:\cs\模板2\Template\src\main\java\com\yin\base\utils\PageUtils.java
 D:\cs\模板2\Template\src\main\java\com\yin\common\aop\R.java
 D:\cs\模板2\Template\src\main\java\com\yin\common\aop\TaskTime.java
 D:\cs\模板2\Template\src\main\java\com\yin\common\aop\TaskTimeAspect.java
@@ -9,4 +12,14 @@ D:\cs\模板2\Template\src\main\java\com\yin\common\Result.java
 D:\cs\模板2\Template\src\main\java\com\yin\common\sys\BaseContext.java
 D:\cs\模板2\Template\src\main\java\com\yin\common\sys\SysEnum.java
 D:\cs\模板2\Template\src\main\java\com\yin\common\sys\SysEnumInterface.java
+D:\cs\模板2\Template\src\main\java\com\yin\config\FillHandler.java
+D:\cs\模板2\Template\src\main\java\com\yin\config\JacksonConfig.java
+D:\cs\模板2\Template\src\main\java\com\yin\config\MybatisPlusConfig.java
+D:\cs\模板2\Template\src\main\java\com\yin\config\MyWebMvcConfig.java
+D:\cs\模板2\Template\src\main\java\com\yin\config\RequestTimeInterceptor.java
+D:\cs\模板2\Template\src\main\java\com\yin\controller\UserTableController.java
+D:\cs\模板2\Template\src\main\java\com\yin\entity\user\UserTablePojo.java
+D:\cs\模板2\Template\src\main\java\com\yin\mapper\user\UserTableMapper.java
+D:\cs\模板2\Template\src\main\java\com\yin\service\user\impl\UserTableServiceImpl.java
+D:\cs\模板2\Template\src\main\java\com\yin\service\user\IUserTableService.java
 D:\cs\模板2\Template\src\main\java\com\yin\TemplateApplication.java
