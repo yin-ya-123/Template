@@ -4,30 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="715eba44-223b-4bf5-ac0b-cd8942df6153" name="Changes" comment="优化通用查询">
+    <list default="true" id="715eba44-223b-4bf5-ac0b-cd8942df6153" name="Changes" comment="优化项目结构">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/TemplateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/TemplateApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/controller/user/RoleTableController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/controller/user/UserTableController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/entity/user/RoleTablePojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/entity/user/UserTablePojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/mapper/user/RoleTableMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/mapper/user/UserTableMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/service/user/IRoleTableService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/service/user/IUserTableService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/service/user/impl/RoleTableServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/service/user/impl/UserTableServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/TemplateApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/TemplateApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/controller/user/RoleTableController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/controller/user/UserTableController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/entity/user/RoleTablePojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/entity/user/UserTablePojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/mapper/user/RoleTableMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/mapper/user/UserTableMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/service/user/IRoleTableService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/service/user/IUserTableService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/service/user/impl/RoleTableServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/service/user/impl/UserTableServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/common/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/user/mapper/RoleTableMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/user/mapper/RoleTableMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/RoleTableMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/RoleTableMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,45 +65,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.TemplateApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Template [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Template [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Template [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Template [org.apache.maven.plugins:maven-clean-plugin:3.3.2:help].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Template [test].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.TemplateApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/cs/模板2/Template&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/cs/模板2/Template/src/main/java/com/yin/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TemplateApplication.executor": "Run",
+    "Maven.Template [clean].executor": "Run",
+    "Maven.Template [install].executor": "Run",
+    "Maven.Template [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
+    "Maven.Template [org.apache.maven.plugins:maven-clean-plugin:3.3.2:help].executor": "Run",
+    "Maven.Template [package].executor": "Run",
+    "Maven.Template [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.TemplateApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/cs/模板2/Template/src/main/java/com/yin/module/user/mapper/xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/cs/模板2/Template/src/main/java/com/yin/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cs\模板2\Template\src\main\java\com\yin\module\user\mapper\xml" />
       <recent name="D:\cs\模板2\Template\src\main\java\com\yin" />
       <recent name="D:\cs\模板2\Template\src\main\java\com\yin\common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yin.module.user.mapper.xml" />
       <recent name="com.yin.base.utils" />
       <recent name="com.yin.base.entity" />
       <recent name="com.yin.pojo.parent" />
@@ -196,6 +184,8 @@
       <workItem from="1763083535277" duration="134000" />
       <workItem from="1763089381312" duration="2265000" />
       <workItem from="1763098009180" duration="2567000" />
+      <workItem from="1763100595656" duration="1106000" />
+      <workItem from="1763101715601" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <option name="closed" value="true" />
@@ -221,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763098725010</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="优化项目结构">
+      <option name="closed" value="true" />
+      <created>1763100792274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763100792274</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +239,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交" />
     <MESSAGE value="优化通用查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化通用查询" />
+    <MESSAGE value="优化项目结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化项目结构" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

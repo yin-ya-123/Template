@@ -19,7 +19,7 @@ public class Result<T> {
 
     //自定义消息
     public static <T> Result<T> ok(String message, T data) {
-        Result result = new Result();
+        Result<T> result = new Result<T>();
         result.setCode("200");
         result.setMessage(message);
         result.setData(data);
@@ -27,7 +27,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> error(String message, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("500");
         result.setMessage(message);
         result.setData(data);
@@ -36,7 +36,7 @@ public class Result<T> {
 
     //根据code值获取返回消息
     public static <T> Result<T> ok(Integer code, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("200");
         result.setMessage(ExceptionEnum.getMsgByCode(code));
         result.setData(data);
@@ -44,7 +44,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> error(Integer code, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("500");
         result.setMessage(ExceptionEnum.getMsgByCode(code));
         result.setData(data);
@@ -53,7 +53,7 @@ public class Result<T> {
 
     //根据code值获取返回消息
     public static <T> Result<T> ok(ExceptionEnum code, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("200");
         result.setMessage(ExceptionEnum.getMsgByCode(code.getResultCodeInt()));
         result.setData(data);
@@ -61,7 +61,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> error(ExceptionEnum code, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("500");
         result.setMessage(ExceptionEnum.getMsgByCode(code.getResultCodeInt()));
         result.setData(data);
@@ -70,7 +70,7 @@ public class Result<T> {
 
     //自定义消息还有返回耗时
     public static <T> Result<T> ok(String message, R time, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("200");
         result.setMessage(message);
         result.setData(data);
@@ -79,7 +79,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> error(String message, R time, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("500");
         result.setMessage(message);
         result.setData(data);
@@ -88,7 +88,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> okInsert(T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("200");
         result.setMessage("插入成功");
         result.setData(data);
@@ -96,7 +96,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> okUpdate(T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("200");
         result.setMessage("修改成功");
         result.setData(data);
@@ -104,7 +104,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> okDelete(T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("200");
         result.setMessage("删除成功");
         result.setData(data);
@@ -112,7 +112,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> okSel(T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("200");
         result.setMessage("查询成功");
         result.setData(data);
@@ -120,7 +120,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> errInsert(T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("500");
         result.setMessage("插入失败");
         result.setData(data);
@@ -128,7 +128,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> errUpdate(T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("200");
         result.setMessage("修改失败");
         result.setData(data);
@@ -136,7 +136,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> errDelete(T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("500");
         result.setMessage("删除失败");
         result.setData(data);
@@ -144,7 +144,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> errSel(T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         result.setCode("500");
         result.setMessage("查询失败");
         result.setData(data);
@@ -152,7 +152,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> rInsert(Integer type, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         if (type >= 1) {
             result.setCode("200");
             result.setMessage("插入成功");
@@ -167,7 +167,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> rUpdate(Integer type, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         if (type >= 1) {
             result.setCode("200");
             result.setMessage("修改成功");
@@ -181,7 +181,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> rDelete(Integer type, T data) {
-        Result result = new Result();
+         Result<T> result = new Result<T>();
         if (type >= 1) {
             result.setCode("200");
             result.setMessage("删除成功");

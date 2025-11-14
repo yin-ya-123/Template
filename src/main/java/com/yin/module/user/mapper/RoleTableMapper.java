@@ -9,5 +9,6 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface RoleTableMapper extends BaseMapper<RoleTablePojo> {
-    
+
+    RoleTablePojo getModuleByUserId();
 }
