@@ -5,14 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="715eba44-223b-4bf5-ac0b-cd8942df6153" name="Changes" comment="优化项目结构">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/common/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/user/mapper/RoleTableMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/user/mapper/RoleTableMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/RoleTableMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/RoleTableMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/user/entity/RoleTablePojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/user/entity/RoleTablePojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/user/entity/UserTablePojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/user/entity/UserTablePojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/user/service/impl/RoleTableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/user/service/impl/RoleTableServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/user/service/impl/UserTableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/user/service/impl/UserTableServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Template-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/TemplateApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/base/entity/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/base/service/BaseServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/base/utils/PageUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/aop/R.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/aop/TaskTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/aop/TaskTimeAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/BaseErrorInfoInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/BizException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/ExceptionEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/sys/BaseContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/sys/SysEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/sys/SysEnumInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/FillHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/MyWebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/RequestTimeInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/controller/RoleTableController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/controller/UserTableController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/entity/RoleTablePojo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/entity/UserTablePojo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/RoleTableMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/UserTableMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/xml/RoleTableMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/IRoleTableService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/IUserTableService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/impl/RoleTableServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/impl/UserTableServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +108,7 @@
   "keyToString": {
     "Application.TemplateApplication.executor": "Run",
     "Maven.Template [clean].executor": "Run",
+    "Maven.Template [compile].executor": "Run",
     "Maven.Template [install].executor": "Run",
     "Maven.Template [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
     "Maven.Template [org.apache.maven.plugins:maven-clean-plugin:3.3.2:help].executor": "Run",
@@ -96,6 +136,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.import",
+    "ts.external.directory.path": "D:\\ruanjain\\IntelliJ IDEA 2025.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -185,7 +226,17 @@
       <workItem from="1763089381312" duration="2265000" />
       <workItem from="1763098009180" duration="2567000" />
       <workItem from="1763100595656" duration="1106000" />
-      <workItem from="1763101715601" duration="309000" />
+      <workItem from="1763101715601" duration="342000" />
+      <workItem from="1763345862426" duration="3483000" />
+      <workItem from="1763353581343" duration="262000" />
+      <workItem from="1763353851464" duration="4365000" />
+      <workItem from="1763362373088" duration="5000" />
+      <workItem from="1763364844465" duration="1435000" />
+      <workItem from="1763429726482" duration="281000" />
+      <workItem from="1763430019623" duration="5581000" />
+      <workItem from="1763450271259" duration="71000" />
+      <workItem from="1763512405217" duration="614000" />
+      <workItem from="1763514100951" duration="445000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <option name="closed" value="true" />
@@ -219,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763100792274</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="优化项目结构">
+      <option name="closed" value="true" />
+      <created>1763102030842</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1763102030842</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

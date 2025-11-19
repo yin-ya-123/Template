@@ -1,5 +1,6 @@
-package com.yin.module.user.entity;
+package com.yin.module.jcxx.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -9,13 +10,14 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
- *  角色表 
+ *  菜单表 
  */
 @Data
-@TableName("ROLE_TABLE")
-public class RoleTablePojo extends Entity implements Serializable {
+@TableName("MENU_TABLE")
+public class MenuTablePojo extends Entity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
@@ -26,19 +28,38 @@ public class RoleTablePojo extends Entity implements Serializable {
     private String id;
 
     /**
-     *  角色名称 
+     *  菜单名称 
      */
-    @TableField("ROLE_NAME")
+    @TableField("MENU_NAME")
     @JsonProperty
-    private String roleName;
+    private String menuName;
 
     /**
-     *  角色描述 
+     *  菜单链接 
      */
-    @TableField("ROLE_DESC")
+    @TableField("MENU_URL")
     @JsonProperty
-    private String roleDesc;
+    private String menuUrl;
 
+    /**
+     *  父菜单 ID
+     */
+    @TableField("PARENT_ID")
+    @JsonProperty
+    private String parentId;
+
+    /**
+     *  菜单类型 
+     */
+    @TableField("MENU_TYPE")
+    @JsonProperty
+    private String menuType;
+    /**
+     * 菜单级别
+     */
+    @TableField("MENU_LEVEL")
+    @JsonProperty
+    private String menuLevel;
     /**
      *  拼音码 / 助记码 
      */
@@ -63,29 +84,33 @@ public class RoleTablePojo extends Entity implements Serializable {
     /**
      *  创建时间 
      */
-    @TableField("CREATE_TIME")
+    @TableField(value = "CREATE_TIME", fill = FieldFill.INSERT)
     @JsonProperty
     private LocalDateTime createTime;
 
     /**
      *  创建人账号 
      */
-    @TableField("CREATE_USER")
+    @TableField(value = "CREATE_USER", fill = FieldFill.INSERT)
     @JsonProperty
     private String createUser;
 
     /**
      *  最后更新时间 
      */
-    @TableField("UPDATE_TIME")
+    @TableField(value = "UPDATE_TIME", fill = FieldFill.UPDATE)
     @JsonProperty
     private LocalDateTime updateTime;
 
     /**
      *  最后更新人账号 
      */
-    @TableField("UPDATE_USER")
+    @TableField(value = "UPDATE_USER", fill = FieldFill.UPDATE)
     @JsonProperty
     private String updateUser;
+
+    @TableField(exist = false)
+    @JsonProperty
+    private List<MenuTablePojo> children;
 
 }

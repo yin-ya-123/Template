@@ -75,12 +75,6 @@ public class RoleTableServiceImpl extends BaseServiceImpl<RoleTableMapper,RoleTa
         if (roleTablePojo.getDelFlag() == null || roleTablePojo.getDelFlag().isEmpty()) {
             return " 逻辑删除标志（'0'：未删除，'1'：已删除）为空";
         }
-        if (roleTablePojo.getCreateUser() == null || roleTablePojo.getCreateUser().isEmpty()) {
-            return " 创建人账号 为空";
-        }
-        if (roleTablePojo.getUpdateUser() == null || roleTablePojo.getUpdateUser().isEmpty()) {
-            return " 最后更新人账号 为空";
-        }
         return ExceptionEnum.CODE_CZ.getResultCode();
     }
     //新增

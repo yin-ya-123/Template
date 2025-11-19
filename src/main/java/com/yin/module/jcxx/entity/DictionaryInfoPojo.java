@@ -1,21 +1,19 @@
-package com.yin.module.user.entity;
-
+package com.yin.module.jcxx.entity;
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.yin.base.entity.Entity;
 import lombok.Data;
-
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import com.yin.base.entity.Entity;
 
 /**
- *  角色表 
+ * 通用的字典信息表
  */
 @Data
-@TableName("ROLE_TABLE")
-public class RoleTablePojo extends Entity implements Serializable {
+@TableName("DICTIONARY_INFO")
+public class DictionaryInfoPojo extends Entity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
@@ -26,18 +24,11 @@ public class RoleTablePojo extends Entity implements Serializable {
     private String id;
 
     /**
-     *  角色名称 
+     * 字典描述
      */
-    @TableField("ROLE_NAME")
+    @TableField("DICT_SM")
     @JsonProperty
-    private String roleName;
-
-    /**
-     *  角色描述 
-     */
-    @TableField("ROLE_DESC")
-    @JsonProperty
-    private String roleDesc;
+    private String dictSm;
 
     /**
      *  拼音码 / 助记码 
@@ -63,28 +54,28 @@ public class RoleTablePojo extends Entity implements Serializable {
     /**
      *  创建时间 
      */
-    @TableField("CREATE_TIME")
+    @TableField(value = "CREATE_TIME", fill = FieldFill.INSERT)
     @JsonProperty
     private LocalDateTime createTime;
 
     /**
      *  创建人账号 
      */
-    @TableField("CREATE_USER")
+    @TableField(value = "CREATE_USER", fill = FieldFill.INSERT)
     @JsonProperty
     private String createUser;
 
     /**
      *  最后更新时间 
      */
-    @TableField("UPDATE_TIME")
+    @TableField(value = "UPDATE_TIME", fill = FieldFill.UPDATE)
     @JsonProperty
     private LocalDateTime updateTime;
 
     /**
      *  最后更新人账号 
      */
-    @TableField("UPDATE_USER")
+    @TableField(value = "UPDATE_USER", fill = FieldFill.UPDATE)
     @JsonProperty
     private String updateUser;
 

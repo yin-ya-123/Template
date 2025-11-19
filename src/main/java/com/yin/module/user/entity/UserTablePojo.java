@@ -4,10 +4,11 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
-import java.io.Serializable;
 import com.yin.base.entity.Entity;
-import java.util.Date;
+import lombok.Data;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  *  用户表 
@@ -64,7 +65,7 @@ public class UserTablePojo extends Entity implements Serializable {
      */
     @TableField("CREATE_TIME")
     @JsonProperty
-    private Date createTime;
+    private LocalDateTime createTime;
 
     /**
      *  创建人账号 
@@ -78,7 +79,7 @@ public class UserTablePojo extends Entity implements Serializable {
      */
     @TableField("UPDATE_TIME")
     @JsonProperty
-    private Date updateTime;
+    private LocalDateTime updateTime;
 
     /**
      *  最后更新人账号 
