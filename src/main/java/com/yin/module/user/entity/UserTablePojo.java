@@ -2,6 +2,7 @@ package com.yin.module.user.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.yin.base.entity.Entity;
@@ -57,6 +58,7 @@ public class UserTablePojo extends Entity implements Serializable {
      *  逻辑删除标志（'0'：未删除，'1'：已删除）
      */
     @TableField("DEL_FLAG")
+    @TableLogic(delval = "1", value = "0")
     @JsonProperty
     private String delFlag;
 

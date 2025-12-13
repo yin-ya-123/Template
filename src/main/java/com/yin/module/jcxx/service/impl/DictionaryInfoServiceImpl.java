@@ -30,6 +30,12 @@ public class DictionaryInfoServiceImpl extends BaseServiceImpl<DictionaryInfoMap
         if (dictionaryInfoPojo.getDictSm() != null && !dictionaryInfoPojo.getDictSm().isEmpty()) {
             dictionaryInfoLambdaQueryWrapper.eq(DictionaryInfoPojo::getDictSm,dictionaryInfoPojo.getDictSm());
         }
+        if (dictionaryInfoPojo.getDictValue() != null && !dictionaryInfoPojo.getDictValue().isEmpty()) {
+            dictionaryInfoLambdaQueryWrapper.like(DictionaryInfoPojo::getDictValue,dictionaryInfoPojo.getDictValue());
+        }
+        if (dictionaryInfoPojo.getDictLx() != null && !dictionaryInfoPojo.getDictLx().isEmpty()) {
+            dictionaryInfoLambdaQueryWrapper.eq(DictionaryInfoPojo::getDictLx,dictionaryInfoPojo.getDictLx());
+        }
         if (dictionaryInfoPojo.getPym() != null && !dictionaryInfoPojo.getPym().isEmpty()) {
             dictionaryInfoLambdaQueryWrapper.eq(DictionaryInfoPojo::getPym,dictionaryInfoPojo.getPym());
         }
@@ -39,6 +45,7 @@ public class DictionaryInfoServiceImpl extends BaseServiceImpl<DictionaryInfoMap
         if (dictionaryInfoPojo.getDelFlag() != null && !dictionaryInfoPojo.getDelFlag().isEmpty()) {
             dictionaryInfoLambdaQueryWrapper.eq(DictionaryInfoPojo::getDelFlag,dictionaryInfoPojo.getDelFlag());
         }
+        dictionaryInfoLambdaQueryWrapper.orderByAsc(DictionaryInfoPojo::getDictLx,DictionaryInfoPojo::getSort,DictionaryInfoPojo::getCreateTime);
         return dictionaryInfoLambdaQueryWrapper;
     }
     /**

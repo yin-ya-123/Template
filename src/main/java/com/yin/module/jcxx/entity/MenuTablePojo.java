@@ -1,9 +1,6 @@
 package com.yin.module.jcxx.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.yin.base.entity.Entity;
 import lombok.Data;
@@ -78,6 +75,7 @@ public class MenuTablePojo extends Entity implements Serializable {
      *  逻辑删除标志（'0'：未删除，'1'：已删除）
      */
     @TableField("DEL_FLAG")
+    @TableLogic(delval = "1", value = "0")
     @JsonProperty
     private String delFlag;
 

@@ -63,6 +63,7 @@ public class MenuTableServiceImpl extends BaseServiceImpl<MenuTableMapper, MenuT
         if (menuTablePojo.getUpdateUser() != null && !menuTablePojo.getUpdateUser().isEmpty()) {
             menuTableLambdaQueryWrapper.eq(MenuTablePojo::getUpdateUser, menuTablePojo.getUpdateUser());
         }
+        menuTableLambdaQueryWrapper.orderByAsc(MenuTablePojo::getSort);
         return menuTableLambdaQueryWrapper;
     }
 
@@ -116,7 +117,15 @@ public class MenuTableServiceImpl extends BaseServiceImpl<MenuTableMapper, MenuT
     //删除
     @Override
     public Result<?> deleteMenuTable(MenuTablePojo menuTablePojo) {
-        return delete(menuTablePojo, menuTableVerifyS(menuTablePojo, SysEnum.DELETE));
+        //判断是否还有子菜单
+        LambdaQueryWrapper<MenuTablePojo> menuTablePojoLambdaQueryWrapper = menuTableLambdaQueryWrapper(new MenuTablePojo());
+        menuTablePojoLambdaQueryWrapper.eq(MenuTablePojo::getParentId, menuTablePojo.getId());
+        Long count = baseMapper.selectCount(menuTablePojoLambdaQueryWrapper);
+        if (count > 0) {
+            return Result.error(ExceptionEnum.CODE_DELETE, null);
+        }else{
+            return delete(menuTablePojo, menuTableVerifyS(menuTablePojo, SysEnum.DELETE));
+        }
     }
 
     //修改
@@ -140,7 +149,7 @@ public class MenuTableServiceImpl extends BaseServiceImpl<MenuTableMapper, MenuT
     @Override
     public List<MenuTablePojo> getMenuTableTree(MenuTablePojo menuTablePojo) {
         // 一次性查出所有的菜单项
-        List<MenuTablePojo> allMenus = baseMapper.selectList(new LambdaQueryWrapper<>());
+        List<MenuTablePojo> allMenus = baseMapper.selectList(menuTableLambdaQueryWrapper(menuTablePojo));
 
         // 构建ID到菜单的映射，方便快速查找
         Map<String, MenuTablePojo> menuMap = allMenus.stream()
