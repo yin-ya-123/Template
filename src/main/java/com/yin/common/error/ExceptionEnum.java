@@ -13,6 +13,7 @@ public enum ExceptionEnum implements BaseErrorInfoInterface {
     CODE_DELETE("9999","删除失败，此节点下还有数据"),
     CODE_VERIFY("9998","参数校验失败"),
     CODE_DELETE_DICTIONARY("9997","字典数据不存在"),
+    CODE_DELETE_EMPTY("99990","数据为空"),
     CODE_SQL_EXCEPTION("9996","SQL执行异常"),
     CODE_A_EXISTS("9995","数据已存在"),
     CODE_CZ("9994","操作成功"),

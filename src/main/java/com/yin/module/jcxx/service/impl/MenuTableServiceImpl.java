@@ -123,7 +123,7 @@ public class MenuTableServiceImpl extends BaseServiceImpl<MenuTableMapper, MenuT
         Long count = baseMapper.selectCount(menuTablePojoLambdaQueryWrapper);
         if (count > 0) {
             return Result.error(ExceptionEnum.CODE_DELETE, null);
-        }else{
+        } else {
             return delete(menuTablePojo, menuTableVerifyS(menuTablePojo, SysEnum.DELETE));
         }
     }
@@ -150,7 +150,20 @@ public class MenuTableServiceImpl extends BaseServiceImpl<MenuTableMapper, MenuT
     public List<MenuTablePojo> getMenuTableTree(MenuTablePojo menuTablePojo) {
         // 一次性查出所有的菜单项
         List<MenuTablePojo> allMenus = baseMapper.selectList(menuTableLambdaQueryWrapper(menuTablePojo));
+        return getMenuTableTree(allMenus);
+    }
 
+    @Override
+    public List<MenuTablePojo> getMenuTreeS(String userId) {
+        List<MenuTablePojo> menuTreeS = baseMapper.getMenuTreeS(userId);
+        return getMenuTableTree(menuTreeS);
+
+    }
+
+    /**
+     * 根据 List<MenuTablePojo> 组装数据
+     */
+    public List<MenuTablePojo> getMenuTableTree(List<MenuTablePojo> allMenus) {
         // 构建ID到菜单的映射，方便快速查找
         Map<String, MenuTablePojo> menuMap = allMenus.stream()
                 .collect(Collectors.toMap(MenuTablePojo::getId, Function.identity()));

@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.yin.common.Result;
 import com.yin.common.error.ExceptionEnum;
 import com.yin.module.jcxx.entity.MenuTablePojo;
-import com.yin.module.jcxx.mapper.MenuTableMapper;
+import com.yin.module.jcxx.service.IMenuTableService;
 import com.yin.module.user.entity.UserTablePojo;
 import com.yin.module.user.service.ILoginService;
 import com.yin.module.user.service.IUserTableService;
@@ -18,7 +18,7 @@ public class LoginServiceImpl implements ILoginService {
     @Autowired
     private IUserTableService userTableService;
     @Autowired
-    private MenuTableMapper menuTableMapper;
+    private IMenuTableService menuTableService;
 
     @Override
     public Result<?> login(String username, String password) {
@@ -32,7 +32,7 @@ public class LoginServiceImpl implements ILoginService {
         UserTablePojo one = userTableService.getOne(userTablePojoLambdaQueryWrapper);
         if (one != null) {
             //登录成功获取菜单信息
-            List<MenuTablePojo> menuTreeS = menuTableMapper.getMenuTreeS(one.getId());
+            List<MenuTablePojo> menuTreeS = menuTableService.getMenuTreeS(one.getId());
             one.setMenuTablePojoChildren(menuTreeS);
             return Result.ok("登录成功", one);
         } else {
