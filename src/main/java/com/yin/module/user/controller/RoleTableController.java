@@ -9,7 +9,7 @@ import com.yin.common.Result;
 import java.util.List;
 
 /**
- *  角色表  前端控制器
+ * 角色表 前端控制器
  */
 @RestController
 @RequestMapping("/roleTable")

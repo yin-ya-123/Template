@@ -58,7 +58,20 @@ public abstract class BaseServiceImpl<M extends BaseMapper<T>, T> extends Servic
         }
         return Result.error(message, data);
     }
-
+    /**
+     * 更新根据条件修改
+     */
+    public Result<T> update(T data, String message, LambdaQueryWrapper<T> queryWrapper) {
+        if (message.equals(ExceptionEnum.CODE_CZ.getResultCode())) {
+            boolean b = this.update(data, queryWrapper);
+            if (b) {
+                return Result.okUpdate(data);
+            } else {
+                return Result.errUpdate(data);
+            }
+        }
+        return Result.error(message, data);
+    }
     /**
      * 根据id删除
      *
@@ -69,6 +82,20 @@ public abstract class BaseServiceImpl<M extends BaseMapper<T>, T> extends Servic
     public Result<T> delete(T data, String message) {
         if (message.equals(ExceptionEnum.CODE_CZ.getResultCode())) {
             boolean b = this.removeById(data);
+            if (b) {
+                return Result.okDelete(data);
+            } else {
+                return Result.errDelete(data);
+            }
+        }
+        return Result.error(message, data);
+    }
+    /**
+     * 删除根据条件
+     */
+    public Result<T> delete(T data, String message, LambdaQueryWrapper<T> queryWrapper) {
+        if (message.equals(ExceptionEnum.CODE_CZ.getResultCode())) {
+            boolean b = this.remove(queryWrapper);
             if (b) {
                 return Result.okDelete(data);
             } else {

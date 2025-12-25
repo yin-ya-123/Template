@@ -24,4 +24,4 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: ASSIGN_ID #不需要手动设置ID，如果手动设置ID，则会使用自己设置的值
-  mapper-locations: classpath:com/yin/mapper/xml/*.xml
+  mapper-locations: classpath:com/yin/module/*/mapper/xml/*.xml

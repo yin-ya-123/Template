@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yin.common.Result;
 import java.util.List;
 /**
- *  角色表  服务接口
+ * 角色表 服务接口
  */
 public interface IRoleTableService extends IService<RoleTablePojo> {
     //新增

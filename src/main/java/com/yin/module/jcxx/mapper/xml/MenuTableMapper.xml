@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yin.module.jcxx.mapper.MenuTableMapper">
+    <select id="getMenuTreeS" resultType="com.yin.module.jcxx.entity.MenuTablePojo">
+        SELECT DISTINCT E.ID,
+                        E.MENU_NAME,
+                        E.MENU_URL,
+                        E.PARENT_ID,
+                        E.MENU_TYPE,
+                        E.MENU_LEVEL,
+                        E.PYM,
+                        E.SORT,
+                        E.DEL_FLAG,
+                        E.CREATE_TIME,
+                        E.CREATE_USER,
+                        E.UPDATE_TIME,
+                        E.UPDATE_USER
+        FROM USER_TABLE a
+                 INNER JOIN USER_ROLE_RELATION B
+                            ON A.ID = B.USER_ID
+                                AND B.DEL_FLAG = '0'
+                 INNER JOIN ROLE_TABLE C
+                            ON B.ROLE_ID = C.ID
+                                AND C.DEL_FLAG = '0'
+                 INNER JOIN ROLE_MENU_RELATION D
+                            ON C.ID = D.ROLE_ID
+                                AND D.DEL_FLAG = '0'
+                 INNER JOIN MENU_TABLE E
+                            ON D.MENU_ID = E.ID
+                                AND E.DEL_FLAG = '0'
+        WHERE A.ID = #{userId}
+    </select>
+</mapper>

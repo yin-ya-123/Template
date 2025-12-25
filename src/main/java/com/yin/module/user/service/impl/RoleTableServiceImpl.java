@@ -13,7 +13,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import java.util.List;
 
 /**
- *  角色表  服务实现类
+ * 角色表 服务实现类
  */
 @Service
 public class RoleTableServiceImpl extends BaseServiceImpl<RoleTableMapper,RoleTablePojo> implements IRoleTableService {
@@ -42,12 +42,6 @@ public class RoleTableServiceImpl extends BaseServiceImpl<RoleTableMapper,RoleTa
         if (roleTablePojo.getDelFlag() != null && !roleTablePojo.getDelFlag().isEmpty()) {
             roleTableLambdaQueryWrapper.eq(RoleTablePojo::getDelFlag,roleTablePojo.getDelFlag());
         }
-        if (roleTablePojo.getCreateUser() != null && !roleTablePojo.getCreateUser().isEmpty()) {
-            roleTableLambdaQueryWrapper.eq(RoleTablePojo::getCreateUser,roleTablePojo.getCreateUser());
-        }
-        if (roleTablePojo.getUpdateUser() != null && !roleTablePojo.getUpdateUser().isEmpty()) {
-            roleTableLambdaQueryWrapper.eq(RoleTablePojo::getUpdateUser,roleTablePojo.getUpdateUser());
-        }
         return roleTableLambdaQueryWrapper;
     }
     /**
@@ -58,22 +52,22 @@ public class RoleTableServiceImpl extends BaseServiceImpl<RoleTableMapper,RoleTa
     */
     public String roleTableVerifyS(RoleTablePojo roleTablePojo, SysEnum type) {
         if ((roleTablePojo.getId() == null || roleTablePojo.getId().isEmpty()) && (type.getSysCodeInt().equals(SysEnum.DELETE.getSysCodeInt()) || type.getSysCodeInt().equals(SysEnum.UPDATE.getSysCodeInt()))) {
-            return " 主键 ID为空";
+            return "主键 ID为空";
         }
         if (roleTablePojo.getRoleName() == null || roleTablePojo.getRoleName().isEmpty()) {
-            return " 角色名称 为空";
+            return "角色名称 为空";
         }
         if (roleTablePojo.getRoleDesc() == null || roleTablePojo.getRoleDesc().isEmpty()) {
-            return " 角色描述 为空";
+            return "角色描述 为空";
         }
         if (roleTablePojo.getPym() == null || roleTablePojo.getPym().isEmpty()) {
-            return " 拼音码 / 助记码 为空";
+            return "拼音码 / 助记码 为空";
         }
         if (roleTablePojo.getSort() == null || roleTablePojo.getSort().isEmpty()) {
-            return " 排序字段 为空";
+            return "排序字段 为空";
         }
         if (roleTablePojo.getDelFlag() == null || roleTablePojo.getDelFlag().isEmpty()) {
-            return " 逻辑删除标志（'0'：未删除，'1'：已删除）为空";
+            return "逻辑删除标志（'0'：未删除，'1'：已删除）为空";
         }
         return ExceptionEnum.CODE_CZ.getResultCode();
     }

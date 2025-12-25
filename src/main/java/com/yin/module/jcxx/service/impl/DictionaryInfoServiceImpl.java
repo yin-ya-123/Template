@@ -45,7 +45,7 @@ public class DictionaryInfoServiceImpl extends BaseServiceImpl<DictionaryInfoMap
         if (dictionaryInfoPojo.getDelFlag() != null && !dictionaryInfoPojo.getDelFlag().isEmpty()) {
             dictionaryInfoLambdaQueryWrapper.eq(DictionaryInfoPojo::getDelFlag,dictionaryInfoPojo.getDelFlag());
         }
-        dictionaryInfoLambdaQueryWrapper.orderByAsc(DictionaryInfoPojo::getDictLx,DictionaryInfoPojo::getSort,DictionaryInfoPojo::getCreateTime);
+        dictionaryInfoLambdaQueryWrapper.orderByAsc(DictionaryInfoPojo::getDictSm,DictionaryInfoPojo::getDictLx,DictionaryInfoPojo::getSort,DictionaryInfoPojo::getCreateTime);
         return dictionaryInfoLambdaQueryWrapper;
     }
     /**
