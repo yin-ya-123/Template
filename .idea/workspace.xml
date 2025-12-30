@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="715eba44-223b-4bf5-ac0b-cd8942df6153" name="Changes" comment="精神卫生院相关">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/jcxx/entity/TableFieldFrontendTypePojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/jcxx/entity/TableFieldFrontendTypePojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -226,7 +229,7 @@
       <workItem from="1766733534359" duration="127000" />
       <workItem from="1766733666651" duration="4765000" />
       <workItem from="1766897809183" duration="35000" />
-      <workItem from="1767065477796" duration="516000" />
+      <workItem from="1767065477796" duration="1534000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <option name="closed" value="true" />
@@ -300,7 +303,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767065591343</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="精神卫生院相关">
+      <option name="closed" value="true" />
+      <created>1767066011972</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1767066011972</updated>
+    </task>
+    <task id="LOCAL-00011" summary="精神卫生院相关">
+      <option name="closed" value="true" />
+      <created>1767066092484</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1767066092484</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +336,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="精神卫生院" />
                       </list>
                     </value>
                   </entry>
