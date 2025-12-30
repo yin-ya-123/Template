@@ -4,7 +4,9 @@ import com.yin.module.jcxx.entity.TableFieldFrontendTypePojo;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yin.common.Result;
+
 import java.util.List;
+
 /**
  * 前端显示类型配置表 服务接口
  */
@@ -16,7 +18,7 @@ public interface ITableFieldFrontendTypeService extends IService<TableFieldFront
     public Result<?> deleteTableFieldFrontendType(TableFieldFrontendTypePojo tableFieldFrontendTypePojo);
 
     //修改
-    public Result<?> updateTableFieldFrontendType(TableFieldFrontendTypePojo tableFieldFrontendTypePojo) ;
+    public Result<?> updateTableFieldFrontendType(TableFieldFrontendTypePojo tableFieldFrontendTypePojo);
 
     //查询
     public Result<List<TableFieldFrontendTypePojo>> getTableFieldFrontendTypeList(TableFieldFrontendTypePojo tableFieldFrontendTypePojo);
