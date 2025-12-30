@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yin.module.jsyy.mapper.HISPatientReportCardMapper">
+
+    <select id="getList" resultType="com.yin.module.jsyy.entity.HISPatientReportCardPojo">
+        SELECT
+        HISA.FIELD_PK,
+        HISA.BASEINFO_FIELD_PK_FK,
+        HISA.ZONECODE,
+        HISA.ORGCODE,
+        HISA.CARD_NO,
+        HISA.DIVISION,
+        HISA.CLIN_NO,
+        HISA.INHOS_NO,
+        HISA.PATIENT_NAME,
+        HISA.SEX,
+        HISA.BIRTHDAY_DATE,
+        HISA.DOCUMENT_TYPE,
+        HISA.IDCARD_NUM,
+        HISA.NATIONALITY,
+        HISA.NATION,
+        HISA.REGISTERTYPE,
+        HISA.CONTACT_NAME,
+        HISA.CONTACT_PHONE,
+        HISA.RELATIONSHIP,
+        HISA.REGISTERADDR,
+        HISA.AREATYPE,
+        HISA.REGISTERZONECODE,
+        HISA.ADDR,
+        HISA.ADDRCODE,
+        HISA.EDUCATIONBACK,
+        HISA.MARRIAGE,
+        HISA.EMPLOYMENT,
+        HISA.FAMILY_HISTORY,
+        HISA.ATTACH_TIME,
+        HISA.FIRST_ILL_TIME_ACCURACY,
+        HISA.IF_CURE,
+        HISA.FIRST_CURE_TIME,
+        HISA.FIRST_CURE_TIME_ACCURACY,
+        HISA.HOSPITAL_STATE_HISTORY,
+        HISA.SHUT_STATUS_HISTORY,
+        HISA.PAST_DANGER,
+        HISA.RISK_PAST,
+        HISA.SEND_DIAGNOSIS,
+        HISA.SEND_DIAGNOSIS_OTHER,
+        HISA.DIAGNOSIS_HOSPITAL,
+        HISA.DIAGNOSIS_DATE,
+        HISA.ICD10_CODE,
+        HISA.INFORMED,
+        HISA.INFORMED_DATE,
+        HISA.FILL_DOCTOR,
+        HISA.FILL_DATE,
+        HISA.DEPARTMENT,
+        HISA.DEPARTMENT_PHONE,
+        HISA.REPORT_TYPE,
+        HISA.INFOCREATER,
+        HISA.INFOCREDATE,
+        HISA.IF_NOMEDICATION
+        FROM
+        v_PATIENT_REPORT_CARD HISA
+        WHERE NOT EXISTS (
+        SELECT 1 FROM PATIENT_REPORT_CARD a WHERE HISA.CARD_NO = A.CARD_NO
+        )
+        <if test="pojo.patientName !=null and pojo.patientName!=''">
+            and HISA.PATIENT_NAME like '%'#{user.user_name}
+        </if>
+        UNION ALL
+        SELECT
+        HISA.FIELD_PK,
+        HISA.BASEINFO_FIELD_PK_FK,
+        HISA.ZONECODE,
+        HISA.ORGCODE,
+        HISA.CARD_NO,
+        HISA.DIVISION,
+        HISA.CLIN_NO,
+        HISA.INHOS_NO,
+        HISA.PATIENT_NAME,
+        HISA.SEX,
+        HISA.BIRTHDAY_DATE,
+        HISA.DOCUMENT_TYPE,
+        HISA.IDCARD_NUM,
+        HISA.NATIONALITY,
+        HISA.NATION,
+        HISA.REGISTERTYPE,
+        HISA.CONTACT_NAME,
+        HISA.CONTACT_PHONE,
+        HISA.RELATIONSHIP,
+        HISA.REGISTERADDR,
+        HISA.AREATYPE,
+        HISA.REGISTERZONECODE,
+        HISA.ADDR,
+        HISA.ADDRCODE,
+        HISA.EDUCATIONBACK,
+        HISA.MARRIAGE,
+        HISA.EMPLOYMENT,
+        HISA.FAMILY_HISTORY,
+        HISA.ATTACH_TIME,
+        HISA.FIRST_ILL_TIME_ACCURACY,
+        HISA.IF_CURE,
+        HISA.FIRST_CURE_TIME,
+        HISA.FIRST_CURE_TIME_ACCURACY,
+        HISA.HOSPITAL_STATE_HISTORY,
+        HISA.SHUT_STATUS_HISTORY,
+        HISA.PAST_DANGER,
+        HISA.RISK_PAST,
+        HISA.SEND_DIAGNOSIS,
+        HISA.SEND_DIAGNOSIS_OTHER,
+        HISA.DIAGNOSIS_HOSPITAL,
+        HISA.DIAGNOSIS_DATE,
+        HISA.ICD10_CODE,
+        HISA.INFORMED,
+        HISA.INFORMED_DATE,
+        HISA.FILL_DOCTOR,
+        HISA.FILL_DATE,
+        HISA.DEPARTMENT,
+        HISA.DEPARTMENT_PHONE,
+        HISA.REPORT_TYPE,
+        HISA.INFOCREATER,
+        HISA.INFOCREDATE,
+        HISA.IF_NOMEDICATION
+        FROM PATIENT_REPORT_CARD HISA
+        <where>
+            <if test="pojo.patientName !=null and pojo.patientName!=''">
+                and HISA.PATIENT_NAME like '%'#{user.user_name}
+            </if>
+        </where>
+    </select>
+</mapper>

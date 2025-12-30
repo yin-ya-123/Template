@@ -6,15 +6,54 @@
   <component name="ChangeListManager">
     <list default="true" id="715eba44-223b-4bf5-ac0b-cd8942df6153" name="Changes" comment="处理用户权限信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/base/service/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/base/service/BaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/common/error/ExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/common/error/ExceptionEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/jcxx/service/IMenuTableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/jcxx/service/IMenuTableService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/jcxx/service/impl/MenuTableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/jcxx/service/impl/MenuTableServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/user/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/user/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/common/error/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/common/error/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/config/JacksonConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/TemplateApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/TemplateApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/base/entity/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/base/entity/Entity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yin/base/service/BaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/base/service/BaseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/base/utils/PageUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/base/utils/PageUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/aop/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/aop/R.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/aop/TaskTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/aop/TaskTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/aop/TaskTimeAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/aop/TaskTimeAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/BaseErrorInfoInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/error/BaseErrorInfoInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/BizException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/error/BizException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/ExceptionEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/error/ExceptionEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/error/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/sys/BaseContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/sys/BaseContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/sys/SysEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/sys/SysEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/sys/SysEnumInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/common/sys/SysEnumInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/FillHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/FillHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/MyWebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/MyWebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/MybatisPlusConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/MybatisPlusConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/RequestTimeInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/config/RequestTimeInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/controller/DictionaryInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/controller/DictionaryInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/controller/MenuTableController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/controller/MenuTableController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/entity/MenuTablePojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/entity/MenuTablePojo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/mapper/MenuTableMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/mapper/MenuTableMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/service/IMenuTableService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/service/IMenuTableService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/service/impl/MenuTableServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/service/impl/MenuTableServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/controller/RoleTableController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/controller/RoleTableController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/controller/UserTableController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/controller/UserTableController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/entity/RoleTablePojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/entity/RoleTablePojo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/entity/UserTablePojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/entity/UserTablePojo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/RoleTableMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/RoleTableMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/UserTableMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/UserTableMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/IRoleTableService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/IRoleTableService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/IUserTableService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/IUserTableService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/impl/RoleTableServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/impl/RoleTableServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/impl/UserTableServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/impl/UserTableServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +66,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -86,9 +131,10 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Spring Boot.TemplateApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;精神卫生院&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/cs/模板2/Template/src/main/java/com/yin/module/jcxx/mapper/xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/cs/模板2/接口/Template/src/main/java/com/yin/module/jsyy/mapper/xml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -105,17 +151,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cs\模板2\接口\Template\src\main\java\com\yin\module\jsyy\mapper\xml" />
       <recent name="D:\cs\模板2\Template\src\main\java\com\yin\module\jcxx\mapper\xml" />
       <recent name="D:\cs\模板2\Template\src\main\java\com\yin\module\user\mapper\xml" />
       <recent name="D:\cs\模板2\Template\src\main\java\com\yin" />
       <recent name="D:\cs\模板2\Template\src\main\java\com\yin\common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yin.module.user.mapper.xml" />
       <recent name="com.yin.base.utils" />
+      <recent name="com.yin.module.jsyy.entity" />
+      <recent name="com.yin.module.user.mapper.xml" />
       <recent name="com.yin.base.entity" />
       <recent name="com.yin.pojo.parent" />
-      <recent name="com.yin.utils" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.TemplateApplication">
@@ -220,6 +267,13 @@
       <workItem from="1766621217189" duration="2207000" />
       <workItem from="1766623528412" duration="1426000" />
       <workItem from="1766625000270" duration="3298000" />
+      <workItem from="1766638903703" duration="132000" />
+      <workItem from="1766639072309" duration="15235000" />
+      <workItem from="1766709527825" duration="10115000" />
+      <workItem from="1766720495602" duration="342000" />
+      <workItem from="1766733534359" duration="127000" />
+      <workItem from="1766733666651" duration="4765000" />
+      <workItem from="1766897809183" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <option name="closed" value="true" />

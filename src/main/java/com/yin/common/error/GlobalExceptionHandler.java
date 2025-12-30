@@ -19,4 +19,11 @@ public class GlobalExceptionHandler {
         log.error("发生业务异常！原因是：{}",e.getErrorMsg());
         return Result.error(e.getErrorMsg(),null);
     }
+
+//    @ExceptionHandler(value = Exception.class)
+//    @ResponseBody
+//    public Result<?> exception(HttpServletRequest req, Exception e) {
+//        log.error("发生业务异常！原因是：{}",e.getMessage());
+//        return Result.error(e.getMessage(),null);
+//    }
 }
