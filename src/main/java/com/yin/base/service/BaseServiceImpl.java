@@ -49,6 +49,7 @@ public abstract class BaseServiceImpl<M extends BaseMapper<T>, T> extends Servic
      */
     public Result<T> update(T data, String message) {
         if (message.equals(ExceptionEnum.CODE_CZ.getResultCode())) {
+
             boolean b = this.updateById(data);
             if (b) {
                 return Result.okUpdate(data);
@@ -64,7 +65,8 @@ public abstract class BaseServiceImpl<M extends BaseMapper<T>, T> extends Servic
      */
     public Result<T> update(T data, String message, LambdaQueryWrapper<T> queryWrapper) {
         if (message.equals(ExceptionEnum.CODE_CZ.getResultCode())) {
-            boolean b = this.update(data, queryWrapper);
+            List<T> list = this.list(queryWrapper);
+            boolean b = this.update(list.get(0), queryWrapper);
             if (b) {
                 return Result.okUpdate(data);
             } else {

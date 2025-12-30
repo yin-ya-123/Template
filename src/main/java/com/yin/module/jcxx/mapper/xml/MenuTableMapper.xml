@@ -29,5 +29,6 @@
                             ON D.MENU_ID = E.ID
                                 AND E.DEL_FLAG = '0'
         WHERE A.ID = #{userId}
+        ORDER BY E.SORT
     </select>
 </mapper>
