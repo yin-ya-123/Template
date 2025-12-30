@@ -1,12 +1,11 @@
 package com.yin.module.jcxx.entity;
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+
+import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
-import java.io.Serializable;
 import com.yin.base.entity.Entity;
+import lombok.Data;
+
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
