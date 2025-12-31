@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="715eba44-223b-4bf5-ac0b-cd8942df6153" name="Changes" comment="登录完善">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/base/service/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/base/service/BaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/module/jcxx/mapper/xml/MenuTableMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/module/jcxx/mapper/xml/MenuTableMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/base/service/BaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yin/base/service/BaseServiceImpl.class" afterDir="false" />
-    </list>
+    <list default="true" id="715eba44-223b-4bf5-ac0b-cd8942df6153" name="Changes" comment="1.新增根据表获取字段结构信息接口&#10;2.新增动态字段组件保存接口相关信息" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,7 +211,7 @@
       <workItem from="1766623528412" duration="1426000" />
       <workItem from="1766625000270" duration="5180000" />
       <workItem from="1766897835769" duration="15464000" />
-      <workItem from="1767058869415" duration="3104000" />
+      <workItem from="1767058869415" duration="3172000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <option name="closed" value="true" />
@@ -290,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766630596628</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1.新增根据表获取字段结构信息接口&#10;2.新增动态字段组件保存接口相关信息">
+      <option name="closed" value="true" />
+      <created>1767065449993</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1767065449993</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +318,8 @@
     <MESSAGE value="处理菜单、实体类逻辑删除" />
     <MESSAGE value="处理用户权限信息" />
     <MESSAGE value="登录完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录完善" />
+    <MESSAGE value="1.新增根据表获取字段结构信息接口&#10;2.新增动态字段组件保存接口相关信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.新增根据表获取字段结构信息接口&#10;2.新增动态字段组件保存接口相关信息" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
