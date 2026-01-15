@@ -1,4 +1,18 @@
-target
+# 编译产物目录
+target/
+build/
+
+# IDEA配置目录
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# 编译生成的class文件
 *.class
 
-.idea
+# 其他临时文件
+*.log
+*.cache
+*.diff
+*.patch
