@@ -1,18 +1,20 @@
-# 编译产物目录
-target/
-build/
-
-# IDEA配置目录
-.idea/
+/target/
+.idea
 *.iml
-*.ipr
-*.iws
+.tags
+.tags_sorted_by_file
+.pyc
+__pycache__
+.cache
+.settings
+.classpath
+.project
+.DS_Store
+*.pid
+*Help
+target
+log.*
+.DS_Store
+log.home_IS_UNDEFINED
+doc/api_doc
 
-# 编译生成的class文件
-*.class
-
-# 其他临时文件
-*.log
-*.cache
-*.diff
-*.patch
