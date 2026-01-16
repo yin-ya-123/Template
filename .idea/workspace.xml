@@ -4,52 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="715eba44-223b-4bf5-ac0b-cd8942df6153" name="Changes" comment="增加Vue路径处理">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="715eba44-223b-4bf5-ac0b-cd8942df6153" name="Changes" comment=".gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yin/config/MyWebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yin/config/MyWebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/base/utils/PageUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/aop/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/aop/TaskTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/aop/TaskTimeAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/BaseErrorInfoInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/BizException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/ExceptionEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/error/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/sys/BaseContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/sys/SysEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/common/sys/SysEnumInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/FillHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/JacksonConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/MyWebMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/MybatisPlusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/config/RequestTimeInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/controller/DictionaryInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/controller/MenuTableController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/entity/MenuTablePojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/mapper/MenuTableMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/service/IMenuTableService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/jcxx/service/impl/MenuTableServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/controller/RoleTableController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/controller/UserTableController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/entity/RoleTablePojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/entity/UserTablePojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/RoleTableMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/UserTableMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/mapper/xml/RoleTableMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/IRoleTableService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/IUserTableService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/impl/RoleTableServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yin/module/user/service/impl/UserTableServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768467396810</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=".gitignore">
+      <option name="closed" value="true" />
+      <created>1768524642019</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1768524642019</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +376,8 @@
     <MESSAGE value="1.增加Okhttp网络请求工具类" />
     <MESSAGE value="增加Vue路径处理" />
     <MESSAGE value="增加Vue路径处理1" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加Vue路径处理1" />
+    <MESSAGE value=".gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
