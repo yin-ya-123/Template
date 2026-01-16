@@ -1,8 +1,10 @@
 package com.yin.config;
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
@@ -25,6 +27,14 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
     public void addInterceptors (InterceptorRegistry registry) {
         //注册TestInterceptor拦截器
         registry.addInterceptor(new RequestTimeInterceptor());
+    }
+    // 配置路由转发：将所有非API请求转发到index.html
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        // 只转发以/vue开头的路径，且排除静态资源（含.的路径）
+        // 新版路径匹配策略下的正确写法
+        registry.addViewController("/vue/**")
+                .setViewName("forward:/index.html");
     }
 }
 
